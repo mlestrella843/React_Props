@@ -1,6 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+//Esto es solo un ejemplo 
 
+import React from 'react';
+import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
+
+
+//Componente que regularmente nunca esta dentro de este archhivo
 function App() {
     return (<h1>Hola Mundo</h1>);
 }
