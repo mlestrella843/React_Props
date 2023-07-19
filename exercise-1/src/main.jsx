@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
 //import App from './helloWorldApp';
 
 import { HelloWorldApp } from './helloWorldApp'
+import { FirstApp } from './FirstApp';
+
 
 //Componente que regularmente nunca esta dentro de este archhivo
 
@@ -17,8 +19,9 @@ import { HelloWorldApp } from './helloWorldApp'
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         {/* <App /> */}
-        
-        <HelloWorldApp />
+        {/* <HelloWorldApp /> */}
+
+        <FirstApp />
 
     </React.StrictMode>
 );
