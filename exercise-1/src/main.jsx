@@ -5,9 +5,11 @@ import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
 
 //import { App } from './helloWorldApp'//Esta importada de manera independiente, por eso las llaves.
 //import App from './helloWorldApp';
-
-import { HelloWorldApp } from './helloWorldApp'
+//import { HelloWorldApp } from './helloWorldApp'
 import { FirstApp } from './FirstApp';
+import './style.css';
+
+
 
 
 //Componente que regularmente nunca esta dentro de este archhivo
