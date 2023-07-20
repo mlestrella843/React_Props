@@ -14,18 +14,31 @@ const getResult = (a,b) => {
     return a + b;
 }
 
-export const FirstApp = () => {
-  return (
-    // Este simbolo <> hace la funcion de un Fragment, que evita tener que usar un div de mas.
-    // Funciona como un agrupador Padre de los demas elementos HTML
-    <> 
-        <h1>First App!!!</h1>
-        <h2>Operacion: {newMessage2.title}</h2>
-        <h2>Operacion: { getResult(1,23) }</h2>
-        <h3>Mi nombre es Maria</h3>
-        <p> Este es un subtitulo</p>
-   </>
-    // Aqui se cierra el Fragment
-  )
+// export const FirstApp = () => {
+//   return (
+//     // Este simbolo <> hace la funcion de un Fragment, que evita tener que usar un div de mas.
+//     // Funciona como un agrupador Padre de los demas elementos HTML
+//     <> 
+//         <h1>First App!!!</h1>
+//         <h2>Operacion: {newMessage2.title}</h2>
+//         <h2>Operacion: { getResult(1,23) }</h2>
+//         <h3>Mi nombre es Maria</h3>
+//         <p> Este es un subtitulo</p>
+//    </>
+//     // Aqui se cierra el Fragment
+//   )
 
+// }
+
+// Aqui recibe la infromacion que vbiene del componenete padre desde el main.jsx
+export const FirstApp = ( { title, subtitle } ) => {
+    console.log( {title} );
+
+    return (
+        <>    
+            <h1>{  title }</h1>
+
+            <p>Que estas haciendo?: { subtitle }o</p>
+        </>
+    )
 }

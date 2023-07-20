@@ -23,7 +23,9 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
         {/* <App /> */}
         {/* <HelloWorldApp /> */}
 
-        <FirstApp />
+        {/* Desde aqui estamos mandando informacion desde el componente padre hacia el hijo
+        llamado FirstApp */}
+        <FirstApp title="Maria" subtitle="Estoy probando"/>
 
     </React.StrictMode>
 );
