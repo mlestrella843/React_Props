@@ -1,18 +1,18 @@
 import React from 'react'
 
-//Variable con solo un mensaje
-const newMesage = "Hola Maria!!!!"
+// //Variable con solo un mensaje
+// const newMesage = "Hola Maria!!!!"
 
-//Variable tipo ibjeto
-const newMessage2 = {
-    message: "Estamos aprendiendo",
-    title: "Aprendiendo"
-}
+// //Variable tipo ibjeto
+// const newMessage2 = {
+//     message: "Estamos aprendiendo",
+//     title: "Aprendiendo"
+// }
 
-//Funcion que pide dos numeros y se ejecuta en el cuerpo del componente
-const getResult = (a,b) => {
-    return a + b;
-}
+// //Funcion que pide dos numeros y se ejecuta en el cuerpo del componente
+// const getResult = (a,b) => {
+//     return a + b;
+// }
 
 // export const FirstApp = () => {
 //   return (
@@ -31,12 +31,25 @@ const getResult = (a,b) => {
 // }
 
 // Aqui recibe la infromacion que vbiene del componenete padre desde el main.jsx
+
+import PropTypes from 'prop-types';
+
 export const FirstApp = ( { title, subtitle } ) => {
-    console.log( {title} );
+   // console.log( {title} );
+   //Si se definen las propTypes ya no hay que validar de esta forma
+//    if(!title){
+//     throw new Error('El title no existe');
+//    }
+
     return (
         <>    
             <h1>{  title }</h1>
             <p>Que estas haciendo?: { subtitle }o</p>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired
 }
