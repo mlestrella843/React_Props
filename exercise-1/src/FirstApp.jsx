@@ -44,7 +44,7 @@ export const FirstApp = ( { title, subtitle } ) => {
     return (
         <>    
             <h1>{  title }</h1>
-            <p>Que estas haciendo?: { subtitle }o</p>
+            <p>Que estas haciendo?: { subtitle }</p>
         </>
     )
 }
@@ -52,4 +52,10 @@ export const FirstApp = ( { title, subtitle } ) => {
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired
+}
+
+FirstApp.defaultProps = {
+    title: 'No hay titulo',
+    subtitle: 'No hay subtitulo',
+    name: 'Juanita'
 }
