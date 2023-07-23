@@ -9,9 +9,6 @@ import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
 import { FirstApp } from './FirstApp';
 import './style.css';
 
-
-
-
 //Componente que regularmente nunca esta dentro de este archhivo
 
 // function App() {

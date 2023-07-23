@@ -33,11 +33,9 @@ const getResult = (a,b) => {
 // Aqui recibe la infromacion que vbiene del componenete padre desde el main.jsx
 export const FirstApp = ( { title, subtitle } ) => {
     console.log( {title} );
-
     return (
         <>    
             <h1>{  title }</h1>
-
             <p>Que estas haciendo?: { subtitle }o</p>
         </>
     )
