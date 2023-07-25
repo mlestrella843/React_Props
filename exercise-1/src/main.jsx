@@ -8,8 +8,9 @@ import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
 //import { HelloWorldApp } from './helloWorldApp'
 //import { FirstApp } from './FirstApp';
 import './style.css';
-import { CounterApp } from './CounterApp';
-import { FirstHook } from './firstHook';
+//import { CounterApp } from './CounterApp';
+//import { FirstHook } from './firstHook';
+import { KeepHooking } from './KeepHooking';
 
 //Componente que regularmente nunca esta dentro de este archhivo
 
@@ -26,8 +27,10 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
         llamado FirstApp */}
         {/* <FirstApp title="Maria" subtitle="Estoy probando"/> */}
         {/* <CounterApp  value={ 234 }/> */}
+        {/* <FirstHook value={ 20 }/> */}
+        
+        <KeepHooking value={ 20 }/>
 
-        <FirstHook value={ 20 }/>
 
     </React.StrictMode>
 );
