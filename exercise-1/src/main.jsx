@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom/client'; //Herramienta para renderizar
 //import { FirstApp } from './FirstApp';
 import './style.css';
 import { CounterApp } from './CounterApp';
+import { FirstHook } from './firstHook';
 
 //Componente que regularmente nunca esta dentro de este archhivo
 
@@ -24,8 +25,9 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
         {/* Desde aqui estamos mandando informacion desde el componente padre hacia el hijo
         llamado FirstApp */}
         {/* <FirstApp title="Maria" subtitle="Estoy probando"/> */}
+        {/* <CounterApp  value={ 234 }/> */}
 
-        <CounterApp  value={234}/>
+        <FirstHook value={ 20 }/>
 
     </React.StrictMode>
 );

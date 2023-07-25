@@ -1,17 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-
 
 export const CounterApp = ( {value} ) => {
 
-    return (
+    const handleEvent = () => {
+        console.log("Hola Maria");
+    }
 
+    return (
     <>
         <h1>Counter APP</h1>
         <h2> {value} </h2>
-    
-    </>
 
+        <button onClick={ handleEvent }>
+                Clickea!
+        </button>   
+    </>
   )
 }
 
@@ -20,6 +25,5 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-    value: 45
-    
+    value: 45  
 }
