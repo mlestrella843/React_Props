@@ -13,7 +13,8 @@ describe('Probando <DemoComponent />', () => {
 
        //3. Observar el comportamiento esperado ***** Assert
 
-        expect( message1 ).toBe( message2);
+        expect( message1 ).toBe(message2);
+
       
     });
     
