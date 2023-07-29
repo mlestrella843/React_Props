@@ -61,6 +61,8 @@ describe('Pruebas en 08-imp-exp.js', () => {
 
         expect( heroes ).toEqual(  heroes.filter( (heroe) => heroe.owner === owner )  );
 
+        console.log(heroes);
+        
     });  
 
 });
