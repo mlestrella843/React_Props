@@ -12,7 +12,7 @@ export const getHeroeByIdAsync = ( id ) => {
             if ( p1 ) {
                 resolve( p1 );
             } else {
-                reject( 'No se pudo encontrar el héroe ' + id);
+                reject( 'No se pudo encontrar el heroe ' + id );
             }
         }, 1000 )
     
