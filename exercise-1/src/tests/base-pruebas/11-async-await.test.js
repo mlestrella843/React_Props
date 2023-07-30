@@ -3,7 +3,7 @@ import { getImagen } from "../../base-pruebas/11-async-await"
 
 describe('Pruebas en 11-async-await', () => {
   
-    test('getImagemn debe retornar una url de la imagen ', async() => {
+    test('getImagen debe retornar una url de la imagen ', async() => {
 
             const url = await getImagen();
 
