@@ -43,12 +43,13 @@ export const FirstApp = ( { title, subtitle } ) => {
 
     return (
         <>    
-            <h1>{  title }</h1>
-            <p>Que estas haciendo?: { subtitle }</p>
+            <h1>{ title }</h1>
+            <p> { subtitle }</p>
         </>
     )
 }
 
+//El resultado se chequea en la consola del navegador, NO en la terminal integrada
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired
@@ -56,6 +57,5 @@ FirstApp.propTypes = {
 
 FirstApp.defaultProps = {
     title: 'No hay titulo',
-    subtitle: 'No hay subtitulo',
-    name: 'Juanita'
+    subtitle: 'No hay subtitulo'
 }

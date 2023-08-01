@@ -25,12 +25,10 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
 
         {/* Desde aqui estamos mandando informacion desde el componente padre hacia el hijo
         llamado FirstApp */}
-        <FirstApp title="Maria" subtitle="Estoy probando"/>
+        <FirstApp title= 'Hola, mi nombre en Maria Luisa' subtitle='Y he venido a quedarme'/>
         {/* <CounterApp  value={ 234 }/> */}
         {/* <FirstHook value={ 20 }/> */}
         
         {/* <KeepHooking value={ 20 }/> */}
-
-
     </React.StrictMode>
 );
